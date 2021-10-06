@@ -51,12 +51,25 @@ struct loginRegister: View {
 
 struct LoginView: View {
     @State var email = ""
+    var action = { }
     
     var body: some View {
         VStack(alignment: .leading) {
-            CustomTextField(title: "Correo electronico", placeholder: "example@mail.com")
+            CustomTextField("Correo electronico", placeholder: "example@mail.com")
             
-            CustomTextField(title: "Contraseña", isSecure: true)
+            CustomTextField("Contraseña", placeholder: "*****", isSecure: true)
+            
+            PrimaryButton("Iniciar sesión")
+            
+            Text("Iniciar sesión con redes sociales")
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity)
+                .font(.subheadline)
+            
+            HStack(alignment: .center, spacing: 8) {
+                SecondButton("Facebook")
+                SecondButton("Twitter")
+            }.frame(maxWidth: .infinity)
         }.padding(.top, 80)
     }
 }

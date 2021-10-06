@@ -34,5 +34,7 @@ extension Color {
 
 extension Color {
     static let backgroundBlue = hexStringToUIColor("#041229")
+    static let blueGray = hexStringToUIColor("#24385B")
+    
     static let darkCyan = hexStringToUIColor("#3FCAA0")
 }

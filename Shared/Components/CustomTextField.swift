@@ -14,7 +14,7 @@ struct CustomTextField: View {
     let placeholder: String
     let isSecure: Bool
     
-    init(title: String = "", placeholder: String = "", isSecure: Bool = false) {
+    init(_ title: String = "", placeholder: String = "", isSecure: Bool = false) {
         self.title = title
         self.placeholder = placeholder
         self.isSecure = isSecure
