@@ -19,14 +19,17 @@ struct ContentView: View {
                     .frame(width: 240)
                     .padding(.bottom, 50)
                 loginRegister()
+                
+                Spacer()
             }
             .padding(.horizontal, 20.0)
-        }
+            
+        }.padding(.top, 10)
     }
 }
 
 struct loginRegister: View {
-    @State var isLoginOption = true
+    @State var isLoginOption = false
     
     var body: some View {
         VStack {
@@ -77,9 +80,57 @@ struct LoginView: View {
 struct RegisterView: View {
     var body: some View {
         VStack {
+            Text("Elije una foto de perfil")
+                .foregroundColor(.white)
+                .fontWeight(.bold)
+                .padding(.top, 48)
+            Text("Puedes cambiar o elegirla más adelante")
+                .foregroundColor(.white)
+                .fontWeight(.light)
+                .opacity(0.5)
+                .font(.subheadline)
+                
+            Button(action: takePhoto) {
+                ZStack {
+                    Circle()
+                        .frame(width: 85, height: 85)
+                        .foregroundColor(.white)
+                        .opacity(0.5)
+                    Image(systemName: "camera")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(.white)
+                        .frame(width: 30)
+                }
+            }
+        }.padding(.bottom, 48)
+        
+        VStack(alignment: .leading) {
+            
+            CustomTextField("Correo electronico*", placeholder: "example@mail.com")
+            CustomTextField("Contraseña*", placeholder: "*****", isSecure: true)
+            CustomTextField("Confirmar contraseña*", placeholder: "*****", isSecure: true)
             
         }
+        
+        VStack {
+            PrimaryButton("Registrarme")
+            
+            Text("Regístrarme con redes sociales")
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity)
+                .font(.subheadline)
+            
+            HStack(alignment: .center, spacing: 8) {
+                SecondButton("Facebook")
+                SecondButton("Twitter")
+            }.frame(maxWidth: .infinity)
+        }
     }
+}
+
+func takePhoto() {
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

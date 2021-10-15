@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D02C377C270B63CC0074DECB"
-               BuildableName = "Tests iOS.xctest"
+               BuildableName = "GameStreamTest.xctest"
                BlueprintName = "GameStreamTest"
                ReferencedContainer = "container:GameStream.xcodeproj">
             </BuildableReference>
