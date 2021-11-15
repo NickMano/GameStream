@@ -26,7 +26,7 @@ struct LoginView: View {
                 .padding(.horizontal, 20.0)
                 .navigationBarHidden(true)
             }
-        }
+        }.preferredColorScheme(.dark)
     }
 }
 
