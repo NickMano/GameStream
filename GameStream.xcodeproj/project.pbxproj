@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D02C3782270B63CC0074DECB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C3781270B63CC0074DECB /* Tests_iOS.swift */; };
-		D02C3784270B63CC0074DECB /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C3783270B63CC0074DECB /* Tests_iOSLaunchTests.swift */; };
 		D02C3791270B63CC0074DECB /* GameStreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C3769270B63C90074DECB /* GameStreamApp.swift */; };
 		D02C3793270B63CC0074DECB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C376A270B63C90074DECB /* LoginView.swift */; };
 		D02C3795270B63CC0074DECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D02C376B270B63CC0074DECB /* Assets.xcassets */; };
@@ -39,8 +37,6 @@
 		D02C376B270B63CC0074DECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D02C3770270B63CC0074DECB /* GameStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02C377D270B63CC0074DECB /* GameStreamTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameStreamTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D02C3781270B63CC0074DECB /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		D02C3783270B63CC0074DECB /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		D076797D2743022F009C7D67 /* LoginSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSectionView.swift; sourceTree = "<group>"; };
 		D076797F27430308009C7D67 /* RegisterSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSectionView.swift; sourceTree = "<group>"; };
 		D076798327430967009C7D67 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -103,8 +99,6 @@
 		D02C3780270B63CC0074DECB /* GameStreamTest */ = {
 			isa = PBXGroup;
 			children = (
-				D02C3781270B63CC0074DECB /* Tests_iOS.swift */,
-				D02C3783270B63CC0074DECB /* Tests_iOSLaunchTests.swift */,
 			);
 			path = GameStreamTest;
 			sourceTree = "<group>";
@@ -302,8 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D02C3784270B63CC0074DECB /* Tests_iOSLaunchTests.swift in Sources */,
-				D02C3782270B63CC0074DECB /* Tests_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
