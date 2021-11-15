@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginSectionView: View {
     @State var email = ""
-    var action = { }
+    @State var isHomeActive = false
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -17,7 +17,9 @@ struct LoginSectionView: View {
             
             CustomTextField("Contraseña", placeholder: "*****", isSecure: true)
             
-            PrimaryButton("Iniciar sesión")
+            PrimaryButton("Iniciar sesión") {
+                isHomeActive = true
+            }
             
             Text("Iniciar sesión con redes sociales")
                 .foregroundColor(.white)
@@ -28,6 +30,10 @@ struct LoginSectionView: View {
                 SecondButton("Facebook")
                 SecondButton("Twitter")
             }.frame(maxWidth: .infinity)
+            
+            NavigationLink(destination: HomeView(),
+                           isActive: $isHomeActive,
+                           label: { EmptyView() })
         }.padding(.top, 80)
     }
 }

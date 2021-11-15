@@ -31,7 +31,7 @@ struct CustomTextField: View {
                         .font(.caption)
                         .accentColor(.gray)
                 }
-                .foregroundColor(.gray)
+                .foregroundColor(.white)
         } else {
             TextField("", text: $text)
                 .placeholder(when: text.isEmpty) {
@@ -39,7 +39,7 @@ struct CustomTextField: View {
                         .font(.caption)
                         .accentColor(.gray)
                 }
-                .foregroundColor(.gray)
+                .foregroundColor(.white)
         }
         
         Divider()

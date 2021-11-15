@@ -18,7 +18,8 @@ struct LoginView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 240)
-                        .padding(.bottom, 50)
+                        .padding(.bottom, 24)
+                        .padding(.top, 12)
                     LoginOptions()
                     Spacer()
                 }
@@ -30,7 +31,7 @@ struct LoginView: View {
 }
 
 private struct LoginOptions: View {
-    @State var isLoginOption = false
+    @State var isLoginOption = true
     
     var body: some View {
         VStack {
@@ -51,7 +52,7 @@ private struct LoginOptions: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
             .previewLayout(.sizeThatFits)

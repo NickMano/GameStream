@@ -14,6 +14,8 @@
 		D02C3795270B63CC0074DECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D02C376B270B63CC0074DECB /* Assets.xcassets */; };
 		D076797E2743022F009C7D67 /* LoginSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076797D2743022F009C7D67 /* LoginSectionView.swift */; };
 		D076798027430308009C7D67 /* RegisterSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076797F27430308009C7D67 /* RegisterSectionView.swift */; };
+		D076798427430967009C7D67 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076798327430967009C7D67 /* HomeView.swift */; };
+		D076798727430B92009C7D67 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076798627430B92009C7D67 /* TabBarView.swift */; };
 		D0D2157C270B689200527F7A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2157B270B689200527F7A /* Color.swift */; };
 		D0D2157E270E2C1200527F7A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2157D270E2C1200527F7A /* View.swift */; };
 		D0D21581270E3A3300527F7A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D21580270E3A3300527F7A /* CustomTextField.swift */; };
@@ -41,6 +43,8 @@
 		D02C3783270B63CC0074DECB /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		D076797D2743022F009C7D67 /* LoginSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSectionView.swift; sourceTree = "<group>"; };
 		D076797F27430308009C7D67 /* RegisterSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSectionView.swift; sourceTree = "<group>"; };
+		D076798327430967009C7D67 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D076798627430B92009C7D67 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		D0D2157B270B689200527F7A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		D0D2157D270E2C1200527F7A /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		D0D21580270E3A3300527F7A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -81,7 +85,7 @@
 				D02C3769270B63C90074DECB /* GameStreamApp.swift */,
 				D0D2157F270E2EB800527F7A /* Components */,
 				D0D2157A270B688300527F7A /* Extensions */,
-				D076797A274301D1009C7D67 /* Login */,
+				D07679812743091C009C7D67 /* Views */,
 				D02C376B270B63CC0074DECB /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -113,6 +117,32 @@
 				D076797F27430308009C7D67 /* RegisterSectionView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		D07679812743091C009C7D67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D076797A274301D1009C7D67 /* Login */,
+				D076798527430B77009C7D67 /* TabBar */,
+				D07679822743092E009C7D67 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D07679822743092E009C7D67 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D076798327430967009C7D67 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D076798527430B77009C7D67 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D076798627430B92009C7D67 /* TabBarView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		D0D2157A270B688300527F7A /* Extensions */ = {
@@ -234,8 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D21583270E599900527F7A /* PrimaryButton.swift in Sources */,
+				D076798727430B92009C7D67 /* TabBarView.swift in Sources */,
 				D0D2157E270E2C1200527F7A /* View.swift in Sources */,
 				D076797E2743022F009C7D67 /* LoginSectionView.swift in Sources */,
+				D076798427430967009C7D67 /* HomeView.swift in Sources */,
 				D02C3793270B63CC0074DECB /* LoginView.swift in Sources */,
 				D076798027430308009C7D67 /* RegisterSectionView.swift in Sources */,
 				D02C3791270B63CC0074DECB /* GameStreamApp.swift in Sources */,
