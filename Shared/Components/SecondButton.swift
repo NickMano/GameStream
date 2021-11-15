@@ -10,12 +10,12 @@ import SwiftUI
 struct SecondButton: View {
     let title: String
     let action: () -> Void
-    
+
     init(_ title: String, action: @escaping () -> Void = {}) {
         self.action = action
         self.title = title
     }
-    
+
     var body: some View {
         Button(action: action) {
             Text(title)

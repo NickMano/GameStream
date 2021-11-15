@@ -9,21 +9,21 @@ import SwiftUI
 
 struct CustomTextField: View {
     @State var text = ""
-    
+
     let title: String
     let placeholder: String
     let isSecure: Bool
-    
+
     init(_ title: String = "", placeholder: String = "", isSecure: Bool = false) {
         self.title = title
         self.placeholder = placeholder
         self.isSecure = isSecure
     }
-    
+
     var body: some View {
         Text(title)
             .foregroundColor(.darkCyan)
-        
+
         if isSecure {
             SecureField("", text: $text)
                 .placeholder(when: text.isEmpty) {
@@ -41,11 +41,10 @@ struct CustomTextField: View {
                 }
                 .foregroundColor(.white)
         }
-        
+
         Divider()
             .frame(height: 1)
             .background(Color.darkCyan)
             .padding(.bottom)
     }
 }
-

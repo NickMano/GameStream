@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegisterSectionView: View {
     func takePhoto() { }
-    
+
     var body: some View {
         ScrollView {
             VStack {
@@ -22,7 +22,7 @@ struct RegisterSectionView: View {
                     .fontWeight(.light)
                     .opacity(0.5)
                     .font(.subheadline)
-                
+
                 Button(action: takePhoto) {
                     ZStack {
                         Circle()
@@ -37,24 +37,23 @@ struct RegisterSectionView: View {
                     }
                 }
             }.padding(.bottom, 48)
-            
-            
+
             VStack(alignment: .leading) {
-                
+
                 CustomTextField("Correo electronico*", placeholder: "example@mail.com")
                 CustomTextField("Contraseña*", placeholder: "*****", isSecure: true)
                 CustomTextField("Confirmar contraseña*", placeholder: "*****", isSecure: true)
-                
+
             }
-            
+
             VStack {
                 PrimaryButton("Registrarme")
-                
+
                 Text("Regístrarme con redes sociales")
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .font(.subheadline)
-                
+
                 HStack(alignment: .center, spacing: 8) {
                     SecondButton("Facebook")
                     SecondButton("Twitter")

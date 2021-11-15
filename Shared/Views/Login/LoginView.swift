@@ -12,7 +12,7 @@ struct LoginView: View {
         NavigationView {
             ZStack {
                 Color.backgroundBlue.ignoresSafeArea()
-                
+
                 VStack {
                     Image("appLogo")
                         .resizable()
@@ -32,7 +32,7 @@ struct LoginView: View {
 
 private struct LoginOptions: View {
     @State var isLoginOption = true
-    
+
     var body: some View {
         VStack {
             HStack {
@@ -42,7 +42,7 @@ private struct LoginOptions: View {
                 Button("Registrarme") { isLoginOption = false }
                 .foregroundColor( !isLoginOption ? .white : .white.opacity(0.5))
             }
-            
+
             if isLoginOption {
                 LoginSectionView()
             } else {
