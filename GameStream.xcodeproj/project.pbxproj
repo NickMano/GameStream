@@ -10,8 +10,10 @@
 		D02C3782270B63CC0074DECB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C3781270B63CC0074DECB /* Tests_iOS.swift */; };
 		D02C3784270B63CC0074DECB /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C3783270B63CC0074DECB /* Tests_iOSLaunchTests.swift */; };
 		D02C3791270B63CC0074DECB /* GameStreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C3769270B63C90074DECB /* GameStreamApp.swift */; };
-		D02C3793270B63CC0074DECB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C376A270B63C90074DECB /* ContentView.swift */; };
+		D02C3793270B63CC0074DECB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C376A270B63C90074DECB /* LoginView.swift */; };
 		D02C3795270B63CC0074DECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D02C376B270B63CC0074DECB /* Assets.xcassets */; };
+		D076797E2743022F009C7D67 /* LoginSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076797D2743022F009C7D67 /* LoginSectionView.swift */; };
+		D076798027430308009C7D67 /* RegisterSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076797F27430308009C7D67 /* RegisterSectionView.swift */; };
 		D0D2157C270B689200527F7A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2157B270B689200527F7A /* Color.swift */; };
 		D0D2157E270E2C1200527F7A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2157D270E2C1200527F7A /* View.swift */; };
 		D0D21581270E3A3300527F7A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D21580270E3A3300527F7A /* CustomTextField.swift */; };
@@ -31,12 +33,14 @@
 
 /* Begin PBXFileReference section */
 		D02C3769270B63C90074DECB /* GameStreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStreamApp.swift; sourceTree = "<group>"; };
-		D02C376A270B63C90074DECB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D02C376A270B63C90074DECB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D02C376B270B63CC0074DECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D02C3770270B63CC0074DECB /* GameStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02C377D270B63CC0074DECB /* GameStreamTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameStreamTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02C3781270B63CC0074DECB /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		D02C3783270B63CC0074DECB /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		D076797D2743022F009C7D67 /* LoginSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSectionView.swift; sourceTree = "<group>"; };
+		D076797F27430308009C7D67 /* RegisterSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSectionView.swift; sourceTree = "<group>"; };
 		D0D2157B270B689200527F7A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		D0D2157D270E2C1200527F7A /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		D0D21580270E3A3300527F7A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -74,10 +78,10 @@
 		D02C3768270B63C90074DECB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D02C3769270B63C90074DECB /* GameStreamApp.swift */,
 				D0D2157F270E2EB800527F7A /* Components */,
 				D0D2157A270B688300527F7A /* Extensions */,
-				D02C3769270B63C90074DECB /* GameStreamApp.swift */,
-				D02C376A270B63C90074DECB /* ContentView.swift */,
+				D076797A274301D1009C7D67 /* Login */,
 				D02C376B270B63CC0074DECB /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -99,6 +103,16 @@
 				D02C3783270B63CC0074DECB /* Tests_iOSLaunchTests.swift */,
 			);
 			path = GameStreamTest;
+			sourceTree = "<group>";
+		};
+		D076797A274301D1009C7D67 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D02C376A270B63C90074DECB /* LoginView.swift */,
+				D076797D2743022F009C7D67 /* LoginSectionView.swift */,
+				D076797F27430308009C7D67 /* RegisterSectionView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		D0D2157A270B688300527F7A /* Extensions */ = {
@@ -221,7 +235,9 @@
 			files = (
 				D0D21583270E599900527F7A /* PrimaryButton.swift in Sources */,
 				D0D2157E270E2C1200527F7A /* View.swift in Sources */,
-				D02C3793270B63CC0074DECB /* ContentView.swift in Sources */,
+				D076797E2743022F009C7D67 /* LoginSectionView.swift in Sources */,
+				D02C3793270B63CC0074DECB /* LoginView.swift in Sources */,
+				D076798027430308009C7D67 /* RegisterSectionView.swift in Sources */,
 				D02C3791270B63CC0074DECB /* GameStreamApp.swift in Sources */,
 				D0D2157C270B689200527F7A /* Color.swift in Sources */,
 				D0D21581270E3A3300527F7A /* CustomTextField.swift in Sources */,
