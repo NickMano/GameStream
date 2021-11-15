@@ -14,12 +14,26 @@
 		D076798027430308009C7D67 /* RegisterSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076797F27430308009C7D67 /* RegisterSectionView.swift */; };
 		D076798427430967009C7D67 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076798327430967009C7D67 /* HomeView.swift */; };
 		D076798727430B92009C7D67 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076798627430B92009C7D67 /* TabBarView.swift */; };
+		D09E1B8C27431FA800210DE9 /* LoginViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E1B8B27431FA800210DE9 /* LoginViewTest.swift */; };
+		D09E1B9427431FBB00210DE9 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = D09E1B9327431FBB00210DE9 /* SnapshotTesting */; };
+		D09E1B9A2743258900210DE9 /* HomeViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E1B992743258900210DE9 /* HomeViewTest.swift */; };
+		D09E1B9D2743265B00210DE9 /* TabBarViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E1B9C2743265B00210DE9 /* TabBarViewTest.swift */; };
 		D0D2157C270B689200527F7A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2157B270B689200527F7A /* Color.swift */; };
 		D0D2157E270E2C1200527F7A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2157D270E2C1200527F7A /* View.swift */; };
 		D0D21581270E3A3300527F7A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D21580270E3A3300527F7A /* CustomTextField.swift */; };
 		D0D21583270E599900527F7A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D21582270E599900527F7A /* PrimaryButton.swift */; };
 		D0D21585270E5B1900527F7A /* SecondButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D21584270E5B1900527F7A /* SecondButton.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D09E1B8D27431FA800210DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D02C3764270B63C90074DECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D02C376F270B63CC0074DECB;
+			remoteInfo = GameStream;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D02C3769270B63C90074DECB /* GameStreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStreamApp.swift; sourceTree = "<group>"; };
@@ -30,6 +44,10 @@
 		D076797F27430308009C7D67 /* RegisterSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSectionView.swift; sourceTree = "<group>"; };
 		D076798327430967009C7D67 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D076798627430B92009C7D67 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		D09E1B8927431FA800210DE9 /* GameStreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameStreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09E1B8B27431FA800210DE9 /* LoginViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewTest.swift; sourceTree = "<group>"; };
+		D09E1B992743258900210DE9 /* HomeViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTest.swift; sourceTree = "<group>"; };
+		D09E1B9C2743265B00210DE9 /* TabBarViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewTest.swift; sourceTree = "<group>"; };
 		D0D2157B270B689200527F7A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		D0D2157D270E2C1200527F7A /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		D0D21580270E3A3300527F7A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -45,6 +63,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D09E1B8627431FA800210DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09E1B9427431FBB00210DE9 /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				D02C3768270B63C90074DECB /* Shared */,
+				D09E1B8A27431FA800210DE9 /* GameStreamTests */,
 				D02C3771270B63CC0074DECB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D02C3770270B63CC0074DECB /* GameStream.app */,
+				D09E1B8927431FA800210DE9 /* GameStreamTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +136,56 @@
 			isa = PBXGroup;
 			children = (
 				D076798627430B92009C7D67 /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D09E1B8A27431FA800210DE9 /* GameStreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				D09E1B952743255800210DE9 /* Shared */,
+			);
+			path = GameStreamTests;
+			sourceTree = "<group>";
+		};
+		D09E1B952743255800210DE9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D09E1B962743256100210DE9 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D09E1B962743256100210DE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D09E1B972743256B00210DE9 /* Login */,
+				D09E1B9B2743263D00210DE9 /* TabBar */,
+				D09E1B982743257900210DE9 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D09E1B972743256B00210DE9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D09E1B8B27431FA800210DE9 /* LoginViewTest.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D09E1B982743257900210DE9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D09E1B992743258900210DE9 /* HomeViewTest.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D09E1B9B2743263D00210DE9 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D09E1B9C2743265B00210DE9 /* TabBarViewTest.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -152,6 +230,27 @@
 			productReference = D02C3770270B63CC0074DECB /* GameStream.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D09E1B8827431FA800210DE9 /* GameStreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D09E1B8F27431FA800210DE9 /* Build configuration list for PBXNativeTarget "GameStreamTests" */;
+			buildPhases = (
+				D09E1B8527431FA800210DE9 /* Sources */,
+				D09E1B8627431FA800210DE9 /* Frameworks */,
+				D09E1B8727431FA800210DE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D09E1B8E27431FA800210DE9 /* PBXTargetDependency */,
+			);
+			name = GameStreamTests;
+			packageProductDependencies = (
+				D09E1B9327431FBB00210DE9 /* SnapshotTesting */,
+			);
+			productName = GameStreamTests;
+			productReference = D09E1B8927431FA800210DE9 /* GameStreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +264,10 @@
 					D02C376F270B63CC0074DECB = {
 						CreatedOnToolsVersion = 13.0;
 					};
+					D09E1B8827431FA800210DE9 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = D02C376F270B63CC0074DECB;
+					};
 				};
 			};
 			buildConfigurationList = D02C3767270B63C90074DECB /* Build configuration list for PBXProject "GameStream" */;
@@ -176,11 +279,15 @@
 				Base,
 			);
 			mainGroup = D02C3763270B63C90074DECB;
+			packageReferences = (
+				D09E1B9227431FBB00210DE9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = D02C3771270B63CC0074DECB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D02C376F270B63CC0074DECB /* GameStream */,
+				D09E1B8827431FA800210DE9 /* GameStreamTests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,6 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D02C3795270B63CC0074DECB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D09E1B8727431FA800210DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +349,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D09E1B8527431FA800210DE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09E1B8C27431FA800210DE9 /* LoginViewTest.swift in Sources */,
+				D09E1B9D2743265B00210DE9 /* TabBarViewTest.swift in Sources */,
+				D09E1B9A2743258900210DE9 /* HomeViewTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D09E1B8E27431FA800210DE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D02C376F270B63CC0074DECB /* GameStream */;
+			targetProxy = D09E1B8D27431FA800210DE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D02C3797270B63CC0074DECB /* Debug */ = {
@@ -408,6 +540,55 @@
 			};
 			name = Release;
 		};
+		D09E1B9027431FA800210DE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nicomano.GameStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameStream.app/GameStream";
+			};
+			name = Debug;
+		};
+		D09E1B9127431FA800210DE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nicomano.GameStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameStream.app/GameStream";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -429,7 +610,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D09E1B8F27431FA800210DE9 /* Build configuration list for PBXNativeTarget "GameStreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D09E1B9027431FA800210DE9 /* Debug */,
+				D09E1B9127431FA800210DE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D09E1B9227431FBB00210DE9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D09E1B9327431FBB00210DE9 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D09E1B9227431FBB00210DE9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D02C3764270B63C90074DECB /* Project object */;
 }

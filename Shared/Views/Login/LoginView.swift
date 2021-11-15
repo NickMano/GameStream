@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct LoginView: View {
+    var intialTab: LoginTabOption
+
+    init(_ intialTab: LoginTabOption = .loginOption) {
+        self.intialTab = intialTab
+    }
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -20,7 +26,7 @@ struct LoginView: View {
                         .frame(width: 240)
                         .padding(.bottom, 24)
                         .padding(.top, 12)
-                    LoginOptions()
+                    LoginOptions(intialTab)
                     Spacer()
                 }
                 .padding(.horizontal, 20.0)
@@ -31,7 +37,11 @@ struct LoginView: View {
 }
 
 private struct LoginOptions: View {
-    @State var isLoginOption = true
+    @State var isLoginOption: Bool
+
+    init(_ intialTab: LoginTabOption) {
+        isLoginOption = intialTab == .loginOption
+    }
 
     var body: some View {
         VStack {
@@ -52,9 +62,7 @@ private struct LoginOptions: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
-            .previewLayout(.sizeThatFits)
-    }
+enum LoginTabOption {
+    case loginOption
+    case registerOption
 }

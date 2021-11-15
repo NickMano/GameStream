@@ -15,19 +15,19 @@ struct TabBarView: View {
                     Image(systemName: "person")
                     Text("Perfil")
                 }
-            
+
             HomeView()
                 .tabItem {
                     Image(systemName: "gamecontroller")
                     Text("Juegos")
                 }
-            
+
             HomeView()
                 .tabItem {
                     Image(systemName: "house")
                     Text("Inicio")
                 }
-            
+
             HomeView()
                 .tabItem {
                     Image(systemName: "heart")
