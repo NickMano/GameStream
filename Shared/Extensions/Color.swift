@@ -9,6 +9,13 @@ import Foundation
 import SwiftUI
 
 extension Color {
+    static let backgroundBlue = hexStringToUIColor("#121F3D")
+    static let blueGray = hexStringToUIColor("#24385B")
+    static let cyan = hexStringToUIColor("#49FFC8")
+    static let darkCyan = hexStringToUIColor("#3FCAA0")
+}
+
+extension Color {
     static func hexStringToUIColor(_ hex: String, opacity: Double = 1.0) -> Color {
         var cString: String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
 
@@ -30,11 +37,4 @@ extension Color {
             opacity: opacity
         )
     }
-}
-
-extension Color {
-    static let backgroundBlue = hexStringToUIColor("#041229")
-    static let blueGray = hexStringToUIColor("#24385B")
-
-    static let darkCyan = hexStringToUIColor("#3FCAA0")
 }
