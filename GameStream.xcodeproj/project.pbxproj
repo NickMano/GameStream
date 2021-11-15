@@ -21,22 +21,11 @@
 		D0D21585270E5B1900527F7A /* SecondButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D21584270E5B1900527F7A /* SecondButton.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D02C377E270B63CC0074DECB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D02C3764270B63C90074DECB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D02C376F270B63CC0074DECB;
-			remoteInfo = "GameStream (iOS)";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		D02C3769270B63C90074DECB /* GameStreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStreamApp.swift; sourceTree = "<group>"; };
 		D02C376A270B63C90074DECB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D02C376B270B63CC0074DECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D02C3770270B63CC0074DECB /* GameStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D02C377D270B63CC0074DECB /* GameStreamTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameStreamTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D076797D2743022F009C7D67 /* LoginSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSectionView.swift; sourceTree = "<group>"; };
 		D076797F27430308009C7D67 /* RegisterSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSectionView.swift; sourceTree = "<group>"; };
 		D076798327430967009C7D67 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -56,13 +45,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D02C377A270B63CC0074DECB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				D02C3768270B63C90074DECB /* Shared */,
-				D02C3780270B63CC0074DECB /* GameStreamTest */,
 				D02C3771270B63CC0074DECB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,16 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				D02C3770270B63CC0074DECB /* GameStream.app */,
-				D02C377D270B63CC0074DECB /* GameStreamTest.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D02C3780270B63CC0074DECB /* GameStreamTest */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GameStreamTest;
 			sourceTree = "<group>";
 		};
 		D076797A274301D1009C7D67 /* Login */ = {
@@ -179,24 +152,6 @@
 			productReference = D02C3770270B63CC0074DECB /* GameStream.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D02C377C270B63CC0074DECB /* GameStreamTest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D02C379F270B63CC0074DECB /* Build configuration list for PBXNativeTarget "GameStreamTest" */;
-			buildPhases = (
-				D02C3779270B63CC0074DECB /* Sources */,
-				D02C377A270B63CC0074DECB /* Frameworks */,
-				D02C377B270B63CC0074DECB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D02C377F270B63CC0074DECB /* PBXTargetDependency */,
-			);
-			name = GameStreamTest;
-			productName = "Tests iOS";
-			productReference = D02C377D270B63CC0074DECB /* GameStreamTest.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,10 +164,6 @@
 				TargetAttributes = {
 					D02C376F270B63CC0074DECB = {
 						CreatedOnToolsVersion = 13.0;
-					};
-					D02C377C270B63CC0074DECB = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = D02C376F270B63CC0074DECB;
 					};
 				};
 			};
@@ -230,7 +181,6 @@
 			projectRoot = "";
 			targets = (
 				D02C376F270B63CC0074DECB /* GameStream */,
-				D02C377C270B63CC0074DECB /* GameStreamTest */,
 			);
 		};
 /* End PBXProject section */
@@ -241,13 +191,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D02C3795270B63CC0074DECB /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D02C377B270B63CC0074DECB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,22 +235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D02C3779270B63CC0074DECB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D02C377F270B63CC0074DECB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D02C376F270B63CC0074DECB /* GameStream */;
-			targetProxy = D02C377E270B63CC0074DECB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D02C3797270B63CC0074DECB /* Debug */ = {
@@ -480,55 +408,6 @@
 			};
 			name = Release;
 		};
-		D02C37A0270B63CC0074DECB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nicomano.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "GameStream (iOS)";
-			};
-			name = Debug;
-		};
-		D02C37A1270B63CC0074DECB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nicomano.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "GameStream (iOS)";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -546,15 +425,6 @@
 			buildConfigurations = (
 				D02C379A270B63CC0074DECB /* Debug */,
 				D02C379B270B63CC0074DECB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D02C379F270B63CC0074DECB /* Build configuration list for PBXNativeTarget "GameStreamTest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D02C37A0270B63CC0074DECB /* Debug */,
-				D02C37A1270B63CC0074DECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
