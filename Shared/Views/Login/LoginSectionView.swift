@@ -31,7 +31,7 @@ struct LoginSectionView: View {
                 SecondButton("Twitter")
             }.frame(maxWidth: .infinity)
 
-            NavigationLink(destination: HomeView(),
+            NavigationLink(destination: TabBarView(),
                            isActive: $isHomeActive,
                            label: { EmptyView() })
         }.padding(.top, 80)

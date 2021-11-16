@@ -9,7 +9,13 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Welcome to Home!")
+        ZStack {
+            Color.backgroundBlue.ignoresSafeArea()
+            Text("Welcome to Home!")
+                .foregroundColor(.white)
+        }
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
