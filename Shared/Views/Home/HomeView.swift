@@ -11,8 +11,7 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             Color.backgroundBlue.ignoresSafeArea()
-            Text("Welcome to Home!")
-                .foregroundColor(.white)
+            HomeSection()
         }
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
