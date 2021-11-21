@@ -23,6 +23,7 @@
 		D0D21581270E3A3300527F7A /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D21580270E3A3300527F7A /* CustomTextField.swift */; };
 		D0D21583270E599900527F7A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D21582270E599900527F7A /* PrimaryButton.swift */; };
 		D0D21585270E5B1900527F7A /* SecondButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D21584270E5B1900527F7A /* SecondButton.swift */; };
+		D0E713E7274A8C9500CE0F83 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E713E6274A8C9500CE0F83 /* Logo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D0D21580270E3A3300527F7A /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		D0D21582270E599900527F7A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		D0D21584270E5B1900527F7A /* SecondButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondButton.swift; sourceTree = "<group>"; };
+		D0E713E6274A8C9500CE0F83 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				D0D21580270E3A3300527F7A /* CustomTextField.swift */,
 				D0D21582270E599900527F7A /* PrimaryButton.swift */,
 				D0D21584270E5B1900527F7A /* SecondButton.swift */,
+				D0E713E6274A8C9500CE0F83 /* Logo.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				D02C3791270B63CC0074DECB /* GameStreamApp.swift in Sources */,
 				D0D2157C270B689200527F7A /* Color.swift in Sources */,
 				D0D21581270E3A3300527F7A /* CustomTextField.swift in Sources */,
+				D0E713E7274A8C9500CE0F83 /* Logo.swift in Sources */,
 				D0D21585270E5B1900527F7A /* SecondButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

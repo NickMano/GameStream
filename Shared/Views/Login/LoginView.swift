@@ -20,12 +20,7 @@ struct LoginView: View {
                 Color.backgroundBlue.ignoresSafeArea()
 
                 VStack {
-                    Image("appLogo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 240)
-                        .padding(.bottom, 24)
-                        .padding(.top, 12)
+                    Logo()
                     LoginOptions(intialTab)
                     Spacer()
                 }
