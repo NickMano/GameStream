@@ -23,7 +23,6 @@ struct SearchBar: View {
                     Text("Buscar un video")
                         .foregroundColor(.white)
                         .opacity(0.5)
-                        .multilineTextAlignment(.leading)
                 }
 
                 TextField("", text: $textToSearch)
@@ -31,10 +30,10 @@ struct SearchBar: View {
 
             }
         }
-        .padding(.all, 11.0)
+        .padding(.all, 12.0)
         .background(Color.blueGray)
         .clipShape(Capsule())
-        .padding(.horizontal, 10.0)
+        .padding(.bottom, 10)
     }
 
     func search() { }
