@@ -7,11 +7,13 @@
 
 import XCTest
 import SnapshotTesting
+import SwiftUI
 @testable import GameStream
 
 final class HomeViewTest: XCTestCase {
     func testHomeView() {
         let sut = HomeView()
-        assertSnapshot(matching: sut, as: .image)
+        let host = UIHostingController(rootView: sut)
+        assertSnapshot(matching: host, as: .image)
     }
 }
