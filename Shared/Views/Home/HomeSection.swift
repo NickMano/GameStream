@@ -9,10 +9,13 @@ import SwiftUI
 
 struct HomeSection: View {
     var body: some View {
-        VStack {
+        ScrollView {
             Logo()
             SearchBar()
-        }
+            PlayerCard(title: "LOS MÁS POPULARES",
+                       description: "The Witcher3: Wild Hunt",
+                       urlVideo: urlVideos[0])
+        }.padding(.horizontal, 10)
     }
 }
 
