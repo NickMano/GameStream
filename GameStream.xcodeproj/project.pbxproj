@@ -26,6 +26,7 @@
 		D0E713E7274A8C9500CE0F83 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E713E6274A8C9500CE0F83 /* Logo.swift */; };
 		D0E713E9274A8DC300CE0F83 /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E713E8274A8DC300CE0F83 /* HomeSection.swift */; };
 		D0E713EB274A96BD00CE0F83 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E713EA274A96BD00CE0F83 /* SearchBar.swift */; };
+		D0E713ED274B0C1200CE0F83 /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E713EC274B0C1200CE0F83 /* PlayerCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D0E713E6274A8C9500CE0F83 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		D0E713E8274A8DC300CE0F83 /* HomeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 		D0E713EA274A96BD00CE0F83 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		D0E713EC274B0C1200CE0F83 /* PlayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 				D0D21584270E5B1900527F7A /* SecondButton.swift */,
 				D0E713E6274A8C9500CE0F83 /* Logo.swift */,
 				D0E713EA274A96BD00CE0F83 /* SearchBar.swift */,
+				D0E713EC274B0C1200CE0F83 /* PlayerCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				D076798727430B92009C7D67 /* TabBarView.swift in Sources */,
 				D0D2157E270E2C1200527F7A /* View.swift in Sources */,
 				D076797E2743022F009C7D67 /* LoginSectionView.swift in Sources */,
+				D0E713ED274B0C1200CE0F83 /* PlayerCard.swift in Sources */,
 				D076798427430967009C7D67 /* HomeView.swift in Sources */,
 				D02C3793270B63CC0074DECB /* LoginView.swift in Sources */,
 				D0E713EB274A96BD00CE0F83 /* SearchBar.swift in Sources */,
