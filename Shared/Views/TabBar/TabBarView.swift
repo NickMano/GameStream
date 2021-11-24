@@ -13,7 +13,7 @@ struct TabBarView: View {
     init() {
         UITabBar.appearance().barTintColor = UIColor(Color.white)
         UITabBar.appearance().backgroundColor = UIColor(Color.blueGray.opacity(0.6))
-        UITabBar.appearance().isTranslucent = true
+        UITabBar.appearance().isTranslucent = false
     }
 
     var body: some View {
