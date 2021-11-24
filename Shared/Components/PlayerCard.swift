@@ -23,10 +23,7 @@ struct PlayerCard: View {
     var body: some View {
         VStack(spacing: 0) {
             if !title.isEmpty {
-            Text(title)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .foregroundColor(.white)
-                .padding(.vertical, 18)
+                Title(title)
             }
 
             ZStack {
@@ -46,7 +43,8 @@ struct PlayerCard: View {
 
         }
 
-        NavigationLink(destination: VideoPlayer(player: AVPlayer(url: URL(string: url)!)), isActive: $isPlayingVideo,
+        NavigationLink(destination: VideoPlayer(player: AVPlayer(url: URL(string: url)!)),
+                       isActive: $isPlayingVideo,
                        label: { EmptyView() })
     }
 }
@@ -66,6 +64,6 @@ private struct PlayerCardDescription: View {
             .padding(.vertical, 12)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(Color.blueGray)
-            .clipShape(Rectangle())
+            .cornerRadius(radius: 4, corners: [.bottomLeft, .bottomRight])
     }
 }
