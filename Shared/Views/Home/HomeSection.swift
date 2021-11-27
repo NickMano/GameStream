@@ -25,9 +25,18 @@ struct HomeSection: View {
                        description: "The Witcher3: Wild Hunt",
                        urlVideo: urlVideos[0])
 
-            Title("CATEGORÍAS SUGERIDAS PARA TI")
-                .padding(.top, 16)
             SuggestSection()
+
+            Title("recomendado para ti")
+                .padding(.top, 16)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    Button { } label: { GameCoverImage("video-games-1") }
+                    Button { } label: { GameCoverImage("video-games-2") }
+                    Button { } label: { GameCoverImage("video-games-3") }
+                    Button { } label: { GameCoverImage("video-games-4") }
+                }
+            }
 
         }.padding(.horizontal, 10)
     }
@@ -35,14 +44,34 @@ struct HomeSection: View {
 
 private struct SuggestSection: View {
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack {
-                Button { } label: { CategoryCard(.defaultCategory) }
-                Button { } label: { CategoryCard(.rpg) }
-                Button { } label: { CategoryCard(.fps) }
-                Button { } label: { CategoryCard(.openWorld) }
+        VStack {
+            Title("CATEGORÍAS SUGERIDAS PARA TI")
+                .padding(.top, 16)
+
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    Button { } label: { CategoryCard(.defaultCategory) }
+                    Button { } label: { CategoryCard(.rpg) }
+                    Button { } label: { CategoryCard(.fps) }
+                    Button { } label: { CategoryCard(.openWorld) }
+                }
             }
         }
+    }
+}
+
+private struct GameCoverImage: View {
+    private let name: String
+
+    init(_ name: String) {
+        self.name = name
+    }
+
+    var body: some View {
+        Image(name)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(height: 128)
     }
 }
 

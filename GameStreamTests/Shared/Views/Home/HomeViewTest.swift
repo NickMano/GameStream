@@ -15,5 +15,6 @@ final class HomeViewTest: XCTestCase {
         let sut = HomeView()
         let host = UIHostingController(rootView: sut)
         assertSnapshot(matching: host, as: .image)
+        assertSnapshot(matching: host, as: .recursiveDescription)
     }
 }
